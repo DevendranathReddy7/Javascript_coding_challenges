@@ -1,0 +1,16 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+}
+th {
+    background-color: rgb(240, 164, 110);
+}
+
+input{
+    margin-bottom: 10px;
+    height: 30px;
+}
+p{
+    display: none;
+}
