@@ -1,7 +1,15 @@
-try {
-  setTimeout(function () {
+// try {
+//   setTimeout(function () {
+//     undefinedVariable;
+//   }, 1000);
+// } catch (err) {
+//   console.log(`inside catch ${err}`);
+// }
+
+setTimeout(() => {
+  try {
     undefinedVariable;
-  }, 1000);
-} catch (err) {
-  console.log(`inside catch ${err}`);
-}
+  } catch (err) {
+    console.log(`inside catch ${err}`);
+  }
+}, 1000);
