@@ -1,4 +1,4 @@
-import { assertEqual } from "./util/assertEqual.js";
+import { assertEqual } from "./util/assertEqual.ts";
 
 function isEven(num: number): boolean {
   return num % 2 === 0;

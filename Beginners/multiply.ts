@@ -1,4 +1,4 @@
-import { assertEqual } from "./util/assertEqual.js";
+import { assertEqual } from "./util/assertEqual.ts";
 
 function multTwo(a: number, b: number): number {
   return a * b;

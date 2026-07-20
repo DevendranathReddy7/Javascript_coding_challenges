@@ -1,4 +1,4 @@
-import { assertEqual } from "./util/assertEqual.js";
+import { assertEqual } from "./util/assertEqual.ts";
 
 function rectanglePerimeter(length: number, width: number): number {
   return 2 * (length + width);

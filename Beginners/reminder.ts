@@ -1,4 +1,4 @@
-import { assertEqual } from "./util/assertEqual.js";
+import { assertEqual } from "./util/assertEqual.ts";
 
 function findRemainder(dividend: number, divisor: number): number {
   // your code here

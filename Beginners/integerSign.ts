@@ -1,4 +1,4 @@
-import { assertEqual } from "./util/assertEqual.js";
+import { assertEqual } from "./util/assertEqual.ts";
 
 function determineSign(num: number): string {
   return num > 0 ? "positive" : num === 0 ? "zero" : "negative";
