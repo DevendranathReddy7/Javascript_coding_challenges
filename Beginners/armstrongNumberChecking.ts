@@ -1,4 +1,4 @@
-import { assertEqual } from "./util/assertEqual";
+import { assertEqual } from "./util/assertEqual.ts";
 
 function isArmstrong(num: number): boolean {
   // your code here

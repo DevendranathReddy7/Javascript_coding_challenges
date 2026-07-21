@@ -1,4 +1,4 @@
-import { assertEqual } from "./util/assertEqual";
+import { assertEqual } from "./util/assertEqual.ts";
 
 function betweenMarkers(text: string, start: string, end: string): string {
   // your code here

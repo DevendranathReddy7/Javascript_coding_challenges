@@ -1,4 +1,4 @@
-import { assertEqual } from "./util/assertEqual";
+import { assertEqual } from "./util/assertEqual.ts";
 function sumUptoN(N: number): number {
   // your code here
   return 0;

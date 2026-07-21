@@ -1,4 +1,4 @@
-import { assertEqual } from "./util/assertEqual";
+import { assertEqual } from "./util/assertEqual.ts";
 
 function fuzzyStringMatch(
   str1: string,

@@ -1,4 +1,4 @@
-import { assertEqual } from "./util/assertEqual";
+import { assertEqual } from "./util/assertEqual.ts";
 function isLeapYear(year: number): boolean {
   // your code here
   return false;

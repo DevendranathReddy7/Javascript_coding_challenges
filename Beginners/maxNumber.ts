@@ -1,8 +1,13 @@
-import { assertEqual } from "./util/assertEqual";
+import { assertEqual } from "./util/assertEqual.ts";
 
 function maxOfThree(a: number, b: number, c: number): number {
-  // your code here
-  return 0;
+  if (a >= b && a >= c) {
+    return a;
+  }
+  if (b >= a && b >= c) {
+    return b;
+  }
+  return c;
 }
 
 console.log("Example:");

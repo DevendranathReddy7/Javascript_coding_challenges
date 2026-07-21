@@ -1,4 +1,4 @@
-import { assertEqual } from "./util/assertEqual";
+import { assertEqual } from "./util/assertEqual.ts";
 
 function replaceAll(mainText: string, target: string, repl: string): string {
   // your code here

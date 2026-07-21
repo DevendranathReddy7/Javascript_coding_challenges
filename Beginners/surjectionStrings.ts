@@ -1,4 +1,4 @@
-import { assertEqual } from "./util/assertEqual";
+import { assertEqual } from "./util/assertEqual.ts";
 function isometricStrings(line1: string, line2: string): boolean {
   // your code here
   return false;

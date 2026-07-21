@@ -1,4 +1,4 @@
-import { assertEqual } from "./util/assertEqual";
+import { assertEqual } from "./util/assertEqual.ts";
 function countOccurrences(mainStr: string, subStr: string): number {
   // your code here
   return 0;
