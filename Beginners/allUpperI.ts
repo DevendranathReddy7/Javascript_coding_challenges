@@ -1,8 +1,12 @@
+//Check if a given string has all symbols in upper case. If the string is empty or doesn't have any letter in it - function should return true.
 import { assertEqual } from "./util/assertEqual.ts";
 
 function isAllUpper(text: string): boolean {
-  // your code here
-  return false;
+  // Valid if there are no lowercase letters anywhere in the string.
+  return !/[a-z]/.test(text);
+
+  //or
+  //return text === text.toUpperCase();
 }
 
 console.log("Example:");

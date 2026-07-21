@@ -1,8 +1,38 @@
+//This function should take three strings as input: the main text, the target substring, and the replacement substring. It should return a new string where all occurrences of the target substring within the main text are replaced with the replacement substring.
+
 import { assertEqual } from "./util/assertEqual.ts";
 
 function replaceAll(mainText: string, target: string, repl: string): string {
-  // your code here
-  return "";
+  //return mainText.replaceAll(target, repl)\
+
+  //OR
+  if (target === "") {
+    return mainText;
+  }
+
+  let result = "";
+  let i = 0;
+
+  while (i < mainText.length) {
+    let isMatch = true;
+
+    for (let j = 0; j < target.length; j += 1) {
+      if (mainText[i + j] !== target[j]) {
+        isMatch = false;
+        break;
+      }
+    }
+
+    if (isMatch && i + target.length <= mainText.length) {
+      result += repl;
+      i += target.length;
+    } else {
+      result += mainText[i];
+      i += 1;
+    }
+  }
+
+  return result;
 }
 
 console.log("Example:");

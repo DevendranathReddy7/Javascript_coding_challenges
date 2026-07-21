@@ -1,8 +1,12 @@
+// You are given a string and you have to find its first word.
+
+// The input string consists of only English letters and spaces.
+// There aren’t any spaces at the beginning and the end of the string.
+
 import { assertEqual } from "./util/assertEqual.ts";
 
 function firstWord(text: string): string {
-  // your code here
-  return "";
+  return text.split(" ")[0];
 }
 
 console.log("Example:");

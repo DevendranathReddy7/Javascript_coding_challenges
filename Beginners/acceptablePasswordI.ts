@@ -1,8 +1,8 @@
-import { assertEqual } from "./util/assertEqual.ts";
+//length should >6
 
+import { assertEqual } from "./util/assertEqual.ts";
 function isAcceptablePassword(password: string): boolean {
-  // your code here
-  return false;
+  return password.length > 6;
 }
 
 console.log("Example:");
