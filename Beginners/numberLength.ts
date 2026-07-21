@@ -1,4 +1,4 @@
-import { assertEqual } from "./util/assertEqual.ts";
+import { assertEqual } from "./util/assertEqual";
 
 function numberLength(value: number): number {
   const len = value.toString().length;
