@@ -1,8 +1,16 @@
+//You have a number and you need to determine which digit in this number is the biggest.
+
 import { assertEqual } from "./util/assertEqual.ts";
 
 function maxDigit(value: number): number {
-  // your code here
-  return 0;
+  let max = -Infinity;
+  let ValStr = value.toString();
+  for (let i = 0; i < ValStr.length; i++) {
+    if (Number(ValStr[i]) > max) {
+      max = Number(ValStr[i]);
+    }
+  }
+  return max;
 }
 
 console.log("Example:");

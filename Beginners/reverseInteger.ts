@@ -1,8 +1,17 @@
+//Reverse the digits of a given integer. For instance, 1234 should become 4321. For negative integers, the sign should remain in the front; e.g., -123 becomes -321.
 import { assertEqual } from "./util/assertEqual.ts";
 
 function reverseDigits(num: number): number {
+  const isNeg = num < 0;
+  const numStr = num.toString();
+  let updated = isNeg ? "-" : "";
   // your code here
-  return 0;
+  for (let i = numStr.length - 1; i >= 0; i--) {
+    if (numStr[i] !== "-") {
+      updated += numStr[i];
+    }
+  }
+  return Number(updated);
 }
 
 console.log("Example:");

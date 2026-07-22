@@ -1,8 +1,12 @@
+//You are given an array with positive integers (number) and an integer (number) N. You should find the N-th power of the element in the array with the index N. If N is outside of the array, then return -1. Don't forget that the first element has the index 0.
+
 import { assertEqual } from "./util/assertEqual.ts";
 
 function indexPower(ar: number[], n: number): number {
   // your code here
-  return 0;
+  if (ar.length < n) return -1;
+
+  return ar[n] ** n;
 }
 
 console.log("Example:");

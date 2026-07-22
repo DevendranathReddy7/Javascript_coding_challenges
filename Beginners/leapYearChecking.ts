@@ -1,7 +1,13 @@
+//heck if the given year is leap year. A year is a leap year if it is divisible by 4, except for end-of-century years which must be divisible by 400. This means that the year 2000 was a leap year, although 1900 was not.
+
 import { assertEqual } from "./util/assertEqual.ts";
 function isLeapYear(year: number): boolean {
   // your code here
-  return false;
+  if (year % 100 === 0) {
+    return year % 400 === 0;
+  } else {
+    return year % 4 === 0;
+  }
 }
 
 console.log("Example:");

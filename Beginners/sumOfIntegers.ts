@@ -1,7 +1,9 @@
+//Calculate sum of integers from 1 to given N (including).
+
 import { assertEqual } from "./util/assertEqual.ts";
 function sumUptoN(N: number): number {
   // your code here
-  return 0;
+  return N * ((N + 1) / 2);
 }
 
 console.log("Example:");
