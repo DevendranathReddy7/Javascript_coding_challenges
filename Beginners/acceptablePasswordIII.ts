@@ -1,8 +1,14 @@
+// In this mission you need to create a password verification function.
+// The verification conditions are:
+// the length should be bigger than 6;
+// should contain at least one digit, but cannot consist of just digits.
+
 import { assertEqual } from "./util/assertEqual.ts";
 
 function isAcceptablePassword(password: string): boolean {
   // your code here
-  return false;
+  //d is to check for digits and D is for to check non digits
+  return password.length > 6 && /\d/.test(password) && /\D/.test(password);
 }
 
 console.log("Example:");

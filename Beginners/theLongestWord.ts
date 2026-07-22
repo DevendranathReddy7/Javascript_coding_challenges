@@ -2,7 +2,17 @@ import { assertEqual } from "./util/assertEqual.ts";
 
 function longestWord(sentence: string): string {
   // your code here
-  return "";
+  let words = sentence.split(" ");
+  let longest = "";
+  let leng = 0;
+
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > leng) {
+      leng = words[i].length;
+      longest = words[i];
+    }
+  }
+  return longest;
 }
 
 console.log("Example:");

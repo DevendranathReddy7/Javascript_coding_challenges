@@ -1,8 +1,26 @@
+//Your function should take a string as an input and convert all the first letters of the words in the string to uppercase, making the string a title case (other letters must be in lowercase).
+
 import { assertEqual } from "./util/assertEqual.ts";
 
 function toTitleCase(sentence: string): string {
-  // your code here
-  return "";
+  let updated = "";
+  let isWordStart = true;
+
+  for (let i = 0; i < sentence.length; i++) {
+    const ch = sentence[i];
+
+    if (ch === " ") {
+      updated += ch;
+      isWordStart = true;
+    } else if (isWordStart) {
+      updated += ch.toUpperCase();
+      isWordStart = false;
+    } else {
+      updated += ch.toLowerCase();
+    }
+  }
+
+  return updated;
 }
 
 console.log("Example:");

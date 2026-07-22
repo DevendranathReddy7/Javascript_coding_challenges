@@ -1,8 +1,17 @@
+//In number theory, an Armstrong number (after Michael F. Armstrong) or narcissistic number in a given number base (10 for this mission) is a number that is the sum of its own digits each raised to the power of the number of digits. For example, 153 is an Armstrong number because 13 + 53 + 33 == 153.
+
 import { assertEqual } from "./util/assertEqual.ts";
 
 function isArmstrong(num: number): boolean {
   // your code here
-  return false;
+  const strNum = num.toString();
+  const leng = strNum.length;
+  let sum = 0;
+  for (let i = 0; i < leng; i++) {
+    sum += Number(strNum[i]) ** leng;
+  }
+
+  return num === sum;
 }
 
 console.log("Example:");

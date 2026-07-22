@@ -3,8 +3,13 @@ import { assertEqual } from "./util/assertEqual.ts";
 const VOWELS = ["a", "e", "i", "o", "u"];
 
 function countVowels(text: string): number {
-  // your code here
-  return 0;
+  let count = 0;
+  for (let i = 0; i < text.length; i++) {
+    if (VOWELS.includes(text[i].toLocaleLowerCase())) {
+      count += 1;
+    }
+  }
+  return count;
 }
 
 console.log("Example:");
