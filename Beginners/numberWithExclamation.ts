@@ -1,8 +1,10 @@
+//This function should take a non-negative integer as an input and return the factorial of that number. The factorial of a non-negative integer n is the product of all positive integers less than or equal to n .
+
 import { assertEqual } from "./util/assertEqual.ts";
 
 function factorial(n: number): number {
-  // your code here
-  return 0;
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
 }
 
 console.log("Example:");

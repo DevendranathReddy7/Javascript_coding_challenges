@@ -1,7 +1,13 @@
+//You should return a given string in reverse order.
+
 import { assertEqual } from "./util/assertEqual.ts";
 function backwardString(value: string): string {
   // your code here
-  return "";
+  let updated = "";
+  for (let i = value.length - 1; i >= 0; i--) {
+    updated += value[i];
+  }
+  return updated;
 }
 
 console.log("Example:");

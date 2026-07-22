@@ -4,8 +4,25 @@
 import { assertEqual } from "./util/assertEqual.ts";
 
 function correctSentence(text: string): string {
-  // your code here
-  return "";
+  if (text.length === 0) {
+    return ".";
+  }
+
+  let updated = "";
+
+  for (let i = 0; i < text.length; i++) {
+    if (i === 0) {
+      updated += text[i].toUpperCase();
+    } else {
+      updated += text[i];
+    }
+  }
+
+  if (text[text.length - 1] !== ".") {
+    updated += ".";
+  }
+
+  return updated;
 }
 
 console.log("Example:");
