@@ -1,7 +1,16 @@
+// The verification conditions are:
+
+// the length should be bigger than 6;
+// should contain at least one digit, but it cannot consist of just digits;
+// if the password is longer than 9 - previous rule is not required.
+
 import { assertEqual } from "./util/assertEqual.ts";
 function isAcceptablePassword(password: string): boolean {
   // your code here
-  return false;
+  return (
+    (password.length > 6 && /\d/.test(password) && /\D/.test(password)) ||
+    password.length > 9
+  );
 }
 
 console.log("Example:");
