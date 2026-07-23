@@ -1,8 +1,18 @@
+//Try to find out how many zeros a given number has at the end.
+
 import { assertEqual } from "./util/assertEqual.ts";
 
 function endZeros(a: number): number {
-  // your code here
-  return 0;
+  let strNum = a.toString();
+  let count = 0;
+  for (let i = strNum.length - 1; i >= 0; i++) {
+    if (strNum[i] === "0") {
+      count += 1;
+    } else {
+      break;
+    }
+  }
+  return count;
 }
 
 console.log("Example:");

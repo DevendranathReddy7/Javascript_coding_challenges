@@ -1,8 +1,17 @@
+//Given two integers, n and k, the task is to count how many numbers between 1 and n (inclusive) are divisible by k.
+
 import { assertEqual } from "./util/assertEqual.ts";
 
 function countDivisible(n: number, k: number): number {
   // your code here
-  return 0;
+  let count = 0;
+
+  for (let i = 1; i <= n; i++) {
+    if (i % k === 0) {
+      count += 1;
+    }
+  }
+  return count;
 }
 
 console.log("Example:");
