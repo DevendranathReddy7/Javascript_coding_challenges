@@ -1,8 +1,17 @@
+//A perfect number is a positive integer that is equal to the sum of its proper divisors, excluding itself. For example, 28 is a perfect number because its divisors are 1, 2, 4, 7, and 14, and their sum is 28.
+
 import { assertEqual } from "./util/assertEqual.ts";
 
 function isPerfect(n: number): boolean {
   // your code here
-  return false;
+  let divisorsSum = 0;
+  for (let i = 1; i <= n / 2; i++) {
+    if (n % i === 0) {
+      divisorsSum += i;
+    }
+  }
+
+  return divisorsSum === n;
 }
 
 console.log("Example:");

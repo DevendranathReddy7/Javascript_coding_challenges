@@ -1,8 +1,18 @@
+//In a given text you need to sum the numbers while excluding any digits that form part of a word.
+
+// The text consists of numbers, spaces and letters from the English alphabet.
 import { assertEqual } from "./util/assertEqual.ts";
 
 function sumNumbers(text: string): number {
   // your code here
-  return 0;
+  let words = text.split(" ");
+  let sum = 0;
+  for (let i = 0; i < words.length; i++) {
+    if (/[0-9]$/.test(words[i])) {
+      sum += Number(words[i]);
+    }
+  }
+  return sum;
 }
 
 console.log("Example:");
