@@ -5,7 +5,7 @@ import { assertEqual } from "./util/assertEqual.ts";
 function endZeros(a: number): number {
   let strNum = a.toString();
   let count = 0;
-  for (let i = strNum.length - 1; i >= 0; i++) {
+  for (let i = strNum.length - 1; i >= 0; i--) {
     if (strNum[i] === "0") {
       count += 1;
     } else {
