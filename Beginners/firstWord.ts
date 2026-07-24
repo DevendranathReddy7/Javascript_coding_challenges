@@ -13,16 +13,8 @@ import { assertEqual } from "./util/assertEqual.ts";
 
 function firstWord(text: string): string {
   // your code here
-  let words = text.split(" ");
-  let word = "";
-  for (let i = 0; i < words.length; i++) {
-    const candidate = words[i].replace(/^[^a-zA-Z']+|[^a-zA-Z']+$/g, "");
-    if (/[a-zA-Z]/.test(candidate)) {
-      word = candidate;
-      break;
-    }
-  }
-  return word;
+  const match = text.match(/^[^a-zA-Z]*([a-zA-Z][a-zA-Z']*)/);
+  return match ? match[1] : "";
 }
 
 console.log("Example:");
@@ -35,3 +27,4 @@ assertEqual(firstWord("don't touch it"), "don't");
 assertEqual(firstWord("greetings, friends"), "greetings");
 assertEqual(firstWord("... and so on ..."), "and");
 assertEqual(firstWord("hi"), "hi");
+assertEqual(firstWord("Hello.world"), "Hello");
