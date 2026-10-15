@@ -1,3 +1,7 @@
+//You need to count how many non-empty lines a given text has.
+
+//An empty line is a line without symbols or the one that contains only spaces.
+
 import { assertEqual } from "./util/assertEqual.ts";
 
 function nonEmptyLines(text: string): number {

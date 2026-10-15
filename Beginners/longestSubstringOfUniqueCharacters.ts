@@ -1,3 +1,5 @@
+//Given a string, find the length of the longest substring without repeating characters.
+
 import { assertEqual } from "./util/assertEqual.ts";
 
 function longestSubstr(s: string): number {

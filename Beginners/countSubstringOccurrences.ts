@@ -1,5 +1,17 @@
+//This function should take a main string and a substring as inputs and return the number of occurrences of the substring within the main string. It should not be case-sensitive and may overlap.
+
 import { assertEqual } from "./util/assertEqual.ts";
 function countOccurrences(mainStr: string, subStr: string): number {
+  const main = mainStr.toLowerCase();
+  const sub = subStr.toLowerCase();
+  let count = 0;
+
+  for (let i = 0; i < sub.length; i++) {
+    for (let j = 0; j < main.length; j++) {
+      if (sub[i] === main[j]) {
+      }
+    }
+  }
   // your code here
   return 0;
 }

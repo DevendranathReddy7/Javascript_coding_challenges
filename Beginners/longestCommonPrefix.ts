@@ -1,6 +1,11 @@
+//This function should take an array of strings and determine the longest common prefix among all the strings. If there is no common prefix, it should return an empty string.
+
 import { assertEqual } from "./util/assertEqual.ts";
 function longestPrefix(arr: string[]): string {
   // your code here
+  let cmn = "";
+
+  for (let i = 0; i < arr.length; i++) {}
   return "";
 }
 

@@ -1,3 +1,5 @@
+//You are given a sequence of integers. Your task in this mission is to find, how many times the sorting direction was changed in the given sequence. If the elements are equal - the previous sorting direction remains the same, if the sequence starts from the same elements - look for the next different to determine the sorting direction.
+
 import { assertEqual } from "./util/assertEqual.ts";
 
 function changingDirection(elements: number[]): number {
